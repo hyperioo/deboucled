@@ -20,8 +20,8 @@ async function suggestUpdate() {
         if (defer) store.set(storage_lastUpdateDeferredCheck, Date.now());
         else store.delete(storage_lastUpdateDeferredCheck);
     }
-
-    const updateRes = await checkUpdate();
+    toggleDeferUpdate(false);
+    /*const updateRes = await checkUpdate();
     if (updateRes?.length && mustRefresh(storage_lastUpdateDeferredCheck, checkUpdateDeferredExpire)) {
         if (confirm('Nouvelle version de Déboucled disponible. Voulez-vous l\'installer ?')) {
             toggleDeferUpdate(false);
@@ -31,7 +31,7 @@ async function suggestUpdate() {
         else {
             toggleDeferUpdate(true);
         }
-    }
+    }*/
 }
 
 function preferDarkTheme() {

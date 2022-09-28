@@ -19,7 +19,7 @@ const deboucledApiUrl = `${deboucledBackendUrl}/deboucledapi`;
 const youtubeBlacklistUrl = `${deboucledApiUrl}/youtubeblacklist`;
 const prebouclesDataUrl = `${deboucledApiUrl}/preboucles`;
 const aiLoopsDataUrl = `${deboucledApiUrl}/loops/v2`;
-const checkUpdateUrl = `${deboucledApiUrl}/checkupdate`;
+const checkUpdateUrl = ``; // `${deboucledApiUrl}/checkupdate`;
 const updateUserUrl = `${deboucledApiUrl}/user`;
 const diagnosticUrl = `${deboucledApiUrl}/diagnostic`;
 
